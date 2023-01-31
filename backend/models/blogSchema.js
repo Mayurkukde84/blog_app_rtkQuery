@@ -1,13 +1,16 @@
 const mongoose = require('mongoose')
 
 const blogSchema = new mongoose.Schema({
+    id:{
+        type:String
+    },
     title:{
         type:String,
         required:[true,"pls fill title field"]
     },
     blogPost:{
         type:String,
-        required:[true,"pls fill post field"]
+    
     }
 })
 
